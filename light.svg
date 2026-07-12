@@ -304,7 +304,7 @@
 
     <!-- Blinking Prompt at bottom of ASCII Panel -->
     <text x="92" y="542" font-family="'Fira Code', Consolas, monospace" font-size="9" fill="#475569" opacity="0" font-weight="bold">
-      anny@macbook ~ % <tspan fill="#06B6D4" class="cursor">█</tspan>
+      aniket@macbook ~ % <tspan fill="#06B6D4" class="cursor">█</tspan>
       <animate attributeName="opacity" to="1" dur="0.1s" begin="2.1s" fill="freeze" />
     </text>
   </g>
@@ -336,13 +336,12 @@
   </g>
 
   <!-- Terminal Body Content -->
-  <!-- Staggered Entrance of Layout Elements -->
   
   <!-- Prompt Row -->
   <g opacity="0">
     <animate attributeName="opacity" to="1" dur="0.4s" begin="0.3s" fill="freeze" />
     <text x="520" y="110" font-family="monospace" font-size="13" font-weight="bold">
-      <tspan fill="#10B981">anny@macbook</tspan> <tspan fill="#475569">~ %</tspan>
+      <tspan fill="#10B981">aniket@macbook</tspan> <tspan fill="#475569">~ %</tspan>
     </text>
   </g>
 
@@ -351,93 +350,101 @@
     <animate attributeName="opacity" to="1" dur="0.4s" begin="0.6s" fill="freeze" />
     <animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" dur="0.4s" begin="0.6s" fill="freeze" />
     <text x="520" y="150" fill="#0F172A" font-size="24" font-weight="800" letter-spacing="-0.5">Hi 👋</text>
-    <text x="520" y="190" fill="#0F172A" font-size="32" font-weight="800" letter-spacing="-0.5">I'm <tspan fill="url(#accent-grad)">Anny</tspan></text>
+    <text x="520" y="190" fill="#0F172A" font-size="32" font-weight="800" letter-spacing="-0.5">I'm <tspan fill="url(#accent-grad)">Aniket</tspan></text>
   </g>
 
   <!-- ======================== ANIMATED TYPING CAROUSEL ======================== -->
   <!-- Position: y = 230 -->
+  <!-- Tailored to Resume:
+       1. ML & LLM Engineer (16 chars, cursor=192, clip=200)
+       2. AI Agent Architect (18 chars, cursor=216, clip=220)
+       3. Associate Product Manager (25 chars, cursor=300, clip=310)
+       4. Graph ML Researcher (19 chars, cursor=228, clip=240)
+       5. Fintech Product Owner (21 chars, cursor=252, clip=260)
+  -->
   
-  <!-- Phrase 1: Frontend Engineer -->
+  <!-- Phrase 1: ML & LLM Engineer -->
   <g opacity="0">
     <animate attributeName="opacity" values="0; 1; 1; 0; 0" keyTimes="0; 0.02; 0.198; 0.20; 1" dur="20s" repeatCount="indefinite" />
     <clipPath id="clip1">
       <rect x="520" y="200" width="0" height="40">
-        <animate attributeName="width" values="0; 0; 220; 220; 0; 0" keyTimes="0; 0.025; 0.075; 0.16; 0.19; 1" dur="20s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 200; 200; 0; 0" keyTimes="0; 0.025; 0.075; 0.16; 0.19; 1" dur="20s" repeatCount="indefinite" />
       </rect>
     </clipPath>
-    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip1)">Frontend Engineer</text>
+    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip1)">ML &amp; LLM Engineer</text>
     <!-- Local Cursor -->
     <rect x="520" y="210" width="8" height="20" fill="#06B6D4" opacity="1">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 204 0; 204 0; 0 0; 0 0" keyTimes="0; 0.025; 0.075; 0.16; 0.19; 1" dur="20s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 192 0; 192 0; 0 0; 0 0" keyTimes="0; 0.025; 0.075; 0.16; 0.19; 1" dur="20s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0;1;0;1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Phrase 2: Full Stack Developer -->
+  <!-- Phrase 2: AI Agent Architect -->
   <g opacity="0">
     <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.20; 0.22; 0.398; 0.40; 1" dur="20s" repeatCount="indefinite" />
     <clipPath id="clip2">
       <rect x="520" y="200" width="0" height="40">
-        <animate attributeName="width" values="0; 0; 250; 250; 0; 0" keyTimes="0; 0.225; 0.275; 0.36; 0.39; 1" dur="20s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 220; 220; 0; 0" keyTimes="0; 0.225; 0.275; 0.36; 0.39; 1" dur="20s" repeatCount="indefinite" />
       </rect>
     </clipPath>
-    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip2)">Full Stack Developer</text>
+    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip2)">AI Agent Architect</text>
     <!-- Local Cursor -->
     <rect x="520" y="210" width="8" height="20" fill="#06B6D4" opacity="1">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 240 0; 240 0; 0 0; 0 0" keyTimes="0; 0.225; 0.275; 0.36; 0.39; 1" dur="20s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 216 0; 216 0; 0 0; 0 0" keyTimes="0; 0.225; 0.275; 0.36; 0.39; 1" dur="20s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0;1;0;1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Phrase 3: Open Source Contributor -->
+  <!-- Phrase 3: Associate Product Manager -->
   <g opacity="0">
     <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.42; 0.598; 0.60; 1" dur="20s" repeatCount="indefinite" />
     <clipPath id="clip3">
       <rect x="520" y="200" width="0" height="40">
-        <animate attributeName="width" values="0; 0; 288; 288; 0; 0" keyTimes="0; 0.425; 0.475; 0.56; 0.59; 1" dur="20s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 310; 310; 0; 0" keyTimes="0; 0.425; 0.475; 0.56; 0.59; 1" dur="20s" repeatCount="indefinite" />
       </rect>
     </clipPath>
-    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip3)">Open Source Contributor</text>
+    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip3)">Associate Product Manager</text>
     <!-- Local Cursor -->
     <rect x="520" y="210" width="8" height="20" fill="#06B6D4" opacity="1">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 276 0; 276 0; 0 0; 0 0" keyTimes="0; 0.425; 0.475; 0.56; 0.59; 1" dur="20s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 300 0; 300 0; 0 0; 0 0" keyTimes="0; 0.425; 0.475; 0.56; 0.59; 1" dur="20s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0;1;0;1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Phrase 4: UI Engineer -->
+  <!-- Phrase 4: Graph ML Researcher -->
   <g opacity="0">
     <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.60; 0.62; 0.798; 0.80; 1" dur="20s" repeatCount="indefinite" />
     <clipPath id="clip4">
       <rect x="520" y="200" width="0" height="40">
-        <animate attributeName="width" values="0; 0; 150; 150; 0; 0" keyTimes="0; 0.625; 0.675; 0.76; 0.79; 1" dur="20s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 240; 240; 0; 0" keyTimes="0; 0.625; 0.675; 0.76; 0.79; 1" dur="20s" repeatCount="indefinite" />
       </rect>
     </clipPath>
-    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip4)">UI Engineer</text>
+    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip4)">Graph ML Researcher</text>
     <!-- Local Cursor -->
     <rect x="520" y="210" width="8" height="20" fill="#06B6D4" opacity="1">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 132 0; 132 0; 0 0; 0 0" keyTimes="0; 0.625; 0.675; 0.76; 0.79; 1" dur="20s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 228 0; 228 0; 0 0; 0 0" keyTimes="0; 0.625; 0.675; 0.76; 0.79; 1" dur="20s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0;1;0;1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
   </g>
 
-  <!-- Phrase 5: AI Enthusiast -->
+  <!-- Phrase 5: Fintech Product Owner -->
   <g opacity="0">
     <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.80; 0.82; 0.998; 1" dur="20s" repeatCount="indefinite" />
     <clipPath id="clip5">
       <rect x="520" y="200" width="0" height="40">
-        <animate attributeName="width" values="0; 0; 160; 160; 0; 0" keyTimes="0; 0.825; 0.875; 0.96; 0.99; 1" dur="20s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 260; 260; 0; 0" keyTimes="0; 0.825; 0.875; 0.96; 0.99; 1" dur="20s" repeatCount="indefinite" />
       </rect>
     </clipPath>
-    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip5)">AI Enthusiast</text>
+    <text x="520" y="228" font-family="'Fira Code', Consolas, monospace" font-size="20" font-weight="bold" fill="url(#accent-grad)" clip-path="url(#clip5)">Fintech Product Owner</text>
     <!-- Local Cursor -->
     <rect x="520" y="210" width="8" height="20" fill="#06B6D4" opacity="1">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 156 0; 156 0; 0 0; 0 0" keyTimes="0; 0.825; 0.875; 0.96; 0.99; 1" dur="20s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 252 0; 252 0; 0 0; 0 0" keyTimes="0; 0.825; 0.875; 0.96; 0.99; 1" dur="20s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0;1;0;1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
   </g>
 
   <!-- ======================== SEQUENTIAL REVEAL DETAILS ======================== -->
+  <!-- Corrected according to Resume -->
   
   <!-- Location -->
   <g opacity="0">
@@ -445,7 +452,7 @@
     <animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" dur="0.5s" begin="1.2s" fill="freeze" />
     <path d="M528 274.5c-3.038 0-5.5 2.462-5.5 5.5 0 4.125 5.5 10.5 5.5 10.5s5.5-6.375 5.5-10.5c0-3.038-2.462-5.5-5.5-5.5zm0 7.5a2 2 0 11.001-4.001A2 2 0 01528 282z" fill="#06B6D4" />
     <text x="546" y="284" fill="#0F172A" font-size="13" font-weight="600">Location:</text>
-    <text x="618" y="284" fill="#475569" font-size="13">Bengaluru, India / Remote</text>
+    <text x="618" y="284" fill="#475569" font-size="13">New Delhi, India</text>
   </g>
 
   <!-- Education -->
@@ -454,7 +461,7 @@
     <animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" dur="0.5s" begin="1.4s" fill="freeze" />
     <path d="M528 303.5l-7 3.5 7 3.5 5.5-2.75v3.5s.5.75 1.5.75 1.5-.75 1.5-.75v-3.5zm-5 6v2.5s1 1 2.5 1 2.5-1 2.5-1v-2.5l-2.5 1.25z" fill="#06B6D4" />
     <text x="546" y="314" fill="#0F172A" font-size="13" font-weight="600">Education:</text>
-    <text x="625" y="314" fill="#475569" font-size="13">B.S. in Computer Science</text>
+    <text x="625" y="314" fill="#475569" font-size="13">B.Sc. Data Analytics &amp; M.Sc. FinEng (Expected)</text>
   </g>
 
   <!-- Current Focus -->
@@ -463,7 +470,7 @@
     <animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" dur="0.5s" begin="1.6s" fill="freeze" />
     <path d="M532.5 330.5c.34-.67.5-1.38.5-2 0-.28-.22-.5-.5-.5-.62 0-1.33.16-2 .5l-2.5 2.5-1.5-.5-2.5 2.5 1 .5-.5.5 1 1 .5-.5.5 1 2.5-2.5-.5-1.5 2.5-2.5z" fill="#06B6D4" />
     <text x="546" y="344" fill="#0F172A" font-size="13" font-weight="600">Focus:</text>
-    <text x="598" y="344" fill="#475569" font-size="13">Next.js • AI Agents • System Design</text>
+    <text x="598" y="344" fill="#475569" font-size="13">Generative AI • RAG Pipelines • Graph ML</text>
   </g>
 
   <!-- Portfolio -->
@@ -481,54 +488,60 @@
     <animateTransform attributeName="transform" type="translate" from="0 8" to="0 0" dur="0.5s" begin="2.0s" fill="freeze" />
     <path d="M522.5 390.5c-.83 0-1.5.67-1.5 1.5v8c0 .83.67 1.5 1.5 1.5h11c.83 0 1.5-.67 1.5-1.5v-8c0-.83-.67-1.5-1.5-1.5h-11zm5.5 5.5l-5-3.5h10l-5 3.5z" fill="#06B6D4" />
     <text x="546" y="404" fill="#0F172A" font-size="13" font-weight="600">Email:</text>
-    <text x="598" y="404" fill="#06B6D4" font-size="13" font-weight="600" class="link-text">anishkumar070707@gmail.com</text>
+    <text x="598" y="404" fill="#06B6D4" font-size="13" font-weight="600" class="link-text">kumaraniketn@gmail.com</text>
   </g>
 
 
-  <!-- ======================== SKILLS SECTION ======================== -->
+  <!-- ======================== SKILLS SECTION (GLOWING PILLS) ======================== -->
+  <!-- Staggered reveal per pill. Coordinates aligned with custom widths. -->
   
-  <!-- React -->
-  <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.30s" fill="freeze" />
-    <rect x="520" y="438" width="64" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="552" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">React</text>
-  </g>
-
-  <!-- Next.js -->
-  <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.36s" fill="freeze" />
-    <rect x="594" y="438" width="78" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="633" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Next.js</text>
-  </g>
-
-  <!-- Node.js -->
-  <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.42s" fill="freeze" />
-    <rect x="682" y="438" width="78" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="721" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Node.js</text>
-  </g>
-
-  <!-- TypeScript -->
-  <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.48s" fill="freeze" />
-    <rect x="770" y="438" width="98" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="819" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">TypeScript</text>
-  </g>
-
-  <!-- Tailwind -->
-  <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.54s" fill="freeze" />
-    <rect x="878" y="438" width="84" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="920" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Tailwind</text>
-  </g>
-
+  <!-- Row 1: Python, PyTorch, Generative AI, RAG, Graph ML, GCP -->
+  
   <!-- Python -->
   <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.60s" fill="freeze" />
-    <rect x="972" y="438" width="70" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="1007" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Python</text>
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.30s" fill="freeze" />
+    <rect x="520" y="438" width="70" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="555" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Python</text>
   </g>
 
+  <!-- PyTorch -->
+  <g class="pill" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.36s" fill="freeze" />
+    <rect x="600" y="438" width="78" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="639" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">PyTorch</text>
+  </g>
+
+  <!-- Generative AI -->
+  <g class="pill" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.42s" fill="freeze" />
+    <rect x="688" y="438" width="118" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="747" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Generative AI</text>
+  </g>
+
+  <!-- RAG -->
+  <g class="pill" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.48s" fill="freeze" />
+    <rect x="816" y="438" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="841" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">RAG</text>
+  </g>
+
+  <!-- Graph ML -->
+  <g class="pill" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.54s" fill="freeze" />
+    <rect x="876" y="438" width="84" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="918" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Graph ML</text>
+  </g>
+
+  <!-- GCP -->
+  <g class="pill" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.60s" fill="freeze" />
+    <rect x="970" y="438" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="995" y="455" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">GCP</text>
+  </g>
+
+
+  <!-- Row 2: Docker, Vector DBs, MCP, SQL, Git -->
+  
   <!-- Docker -->
   <g class="pill" opacity="0">
     <animate attributeName="opacity" to="1" dur="0.4s" begin="2.66s" fill="freeze" />
@@ -536,32 +549,32 @@
     <text x="555" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Docker</text>
   </g>
 
-  <!-- Postgres -->
+  <!-- Vector DBs -->
   <g class="pill" opacity="0">
     <animate attributeName="opacity" to="1" dur="0.4s" begin="2.72s" fill="freeze" />
-    <rect x="600" y="474" width="84" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="642" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Postgres</text>
+    <rect x="600" y="474" width="98" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="649" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Vector DBs</text>
   </g>
 
-  <!-- AWS -->
+  <!-- MCP -->
   <g class="pill" opacity="0">
     <animate attributeName="opacity" to="1" dur="0.4s" begin="2.78s" fill="freeze" />
-    <rect x="694" y="474" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="719" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">AWS</text>
+    <rect x="708" y="474" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="733" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">MCP</text>
+  </g>
+
+  <!-- SQL -->
+  <g class="pill" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.84s" fill="freeze" />
+    <rect x="768" y="474" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="793" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">SQL</text>
   </g>
 
   <!-- Git -->
   <g class="pill" opacity="0">
-    <animate attributeName="opacity" to="1" dur="0.4s" begin="2.84s" fill="freeze" />
-    <rect x="754" y="474" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="779" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Git</text>
-  </g>
-
-  <!-- Figma -->
-  <g class="pill" opacity="0">
     <animate attributeName="opacity" to="1" dur="0.4s" begin="2.90s" fill="freeze" />
-    <rect x="814" y="474" width="64" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
-    <text x="846" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Figma</text>
+    <rect x="828" y="474" width="50" height="26" rx="13" fill="#FFFFFF" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.2" />
+    <text x="853" y="491" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">Git</text>
   </g>
 
 

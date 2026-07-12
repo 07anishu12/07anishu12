@@ -28,25 +28,23 @@ Designed with modern design guidelines (Apple, Linear, Vercel) featuring glassmo
 ## 🛠️ How to Use
 
 ### 1. Host the SVGs
-Clone this repository to your GitHub profile repository (e.g., `github.com/07anishu12/07anishu12`) or host it in a public repository:
-```bash
-git clone git@github.com:07anishu12/07anishu12.git
-# copy dark.svg and light.svg into the repository
-```
+The SVGs are already hosted in your public repository **`07anishu12/Aniket`**.
 
-### 2. Embed in your `README.md`
-Add the following snippet at the top of your GitHub Profile README:
+### 2. Embed in your GitHub Profile README
+To display the banner on your main GitHub Profile README (under repository `07anishu12/07anishu12`), add this snippet at the very top of your profile README file:
 
 ```html
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/07anishu12/07anishu12/main/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/07anishu12/07anishu12/main/light.svg">
-  <img alt="Anny's Profile Banner" src="https://raw.githubusercontent.com/07anishu12/07anishu12/main/dark.svg" width="100%">
-</picture>
+<a href="https://www.linkedin.com/in/aniket-thakur-a23a9b372/" target="_blank">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/07anishu12/Aniket/main/dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/07anishu12/Aniket/main/light.svg">
+    <img alt="Aniket's Profile Banner" src="https://raw.githubusercontent.com/07anishu12/Aniket/main/dark.svg" width="100%">
+  </picture>
+</a>
 ```
 
-> [!NOTE]
-> Make sure to replace `07anishu12` and `main` with your actual username and branch name if different.
+> [!TIP]
+> Wrapping the `<picture>` element in the anchor tag makes the entire banner clickable, allowing visitors to easily navigate to your LinkedIn profile.
 
 ---
 
